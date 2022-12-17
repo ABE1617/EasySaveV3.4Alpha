@@ -6,7 +6,11 @@
              xmlns:local="clr-namespace:EasySavev3G5.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Yellow">
-            
+    <Grid Background="LightCyan">
+        <RadioButton Name="Json" FontSize="16" Content=".json" HorizontalAlignment="Left" Margin="236,53,0,0" VerticalAlignment="Top" />
+        <RadioButton Name="xml" FontSize="16" Content=".xml" HorizontalAlignment="Left" Margin="353,53,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="16" Content="Choose your log file :" HorizontalAlignment="Left" Margin="20,42,0,0" VerticalAlignment="Top" Width="164" Height="33"/>
+        <Button Name="OpenLog" FontSize="16" Content="Open log" HorizontalAlignment="Left" Margin="306,111,0,0" VerticalAlignment="Top" Height="25" Width="94" Click="OpenLog_Click"/>
+
     </Grid>
 </UserControl>

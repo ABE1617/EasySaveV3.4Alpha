@@ -48,11 +48,15 @@
         </Grid.RowDefinitions>
         <DockPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Background="LightSkyBlue">
             <StackPanel>
-                <Button Height="45" Content="Full Backup" Background="LightSkyBlue" Click="Button_Click" />
-                <Button Height="45" Content="Differential Backup" Background="LightSkyBlue" Click="Button_Click_1" />
-                <Button Height="45" Content="Encryption" Background="LightSkyBlue" Click="Button_Click_2" />
-                <Button Height="45" Content="Decryption" Background="LightSkyBlue" Click="Button_Click_3" />
-                <Button Height="45" Margin="0,170,0,0" Content="Settings" Background="LightSkyBlue" Click="Button_Click_4" />
+                <Button x:Name="FULL" Height="45" Content="Full Backup" Background="LightSkyBlue" Click="Button_Click" />
+                <Button x:Name="DEF" Height="45" Content="Differential Backup" Background="LightSkyBlue" Click="Button_Click_1" />
+                <Button x:Name="ENC" Height="45" Content="Encryption" Background="LightSkyBlue" Click="Button_Click_2" />
+                <Button x:Name="DEC" Height="45" Content="Decryption" Background="LightSkyBlue" Click="Button_Click_3" />
+
+                <Button Height="45" Content="French" Background="LightSkyBlue" Click="Button_Click_5"  />
+                <Button Height="45" Content="English" Background="LightSkyBlue" Click="Button_Click_6"  />
+
+                <Button x:Name="SETT" Height="45" Margin="0,100,0,0" Content="Settings" Background="LightSkyBlue" Click="Button_Click_4" />
                 
             </StackPanel>
         </DockPanel>

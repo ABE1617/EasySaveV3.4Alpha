@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using EasySavev3G5.Properties;
 using EasySavev3G5.ViewModel;
 
 namespace EasySavev3G5
@@ -50,5 +52,62 @@ namespace EasySavev3G5
         {
             DataContext = new SettingsViewModel();
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            string path = @"C:\EasySave\language.txt";
+
+            if (!File.Exists(path))
+            {
+                File.Create(path).Dispose();
+
+                using (TextWriter tw = new StreamWriter(path))
+                {
+                    tw.Write("true");
+                }
+
+            }
+            else if (File.Exists(path))
+            {
+                using (TextWriter tw = new StreamWriter(path))
+                {
+                    tw.Write("true");
+                }
+            }
+            FULL.Content = "Sauvegarde complète";
+            DEF.Content = "Sauvegarde différentielle";
+            ENC.Content = "Cryptage"; 
+            DEC.Content = "Décryptage";
+            SETT.Content = "Paramètre";
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            string path = @"C:\EasySave\language.txt";
+
+            if (!File.Exists(path))
+            {
+                File.Create(path).Dispose();
+
+                using (TextWriter tw = new StreamWriter(path))
+                {
+                    tw.Write("false");
+                }
+
+            }
+            else if (File.Exists(path))
+            {
+                using (TextWriter tw = new StreamWriter(path))
+                {
+                    tw.Write("false");
+                }
+            }
+            FULL.Content = "Full Backup";
+            DEF.Content = "Differential Backup";
+            ENC.Content = "Encryption";
+            DEC.Content = "Decryption";
+            SETT.Content = "Settings";
+        }
     }
-}
+    }
+
