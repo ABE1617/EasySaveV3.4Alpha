@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="EasySavev3G5.View.FullBackupView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasySavev3G5.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Full BackUp Test ABE" VerticalAlignment="Top" Height="50" Width="223" FontSize="20"/>
+        <TextBlock x:Name="status" HorizontalAlignment="Left" Margin="267,77,0,0" TextWrapping="Wrap" Text="Ready !" VerticalAlignment="Top"/>
+        <TextBox  HorizontalAlignment="Left" Margin="44,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="446"/>
+        <Button  x:Name="Sbtn" Content="..." HorizontalAlignment="Left" Margin="495,130,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click"/>
+        <TextBox  HorizontalAlignment="Left" Margin="44,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="446"/>
+        <Button x:Name="Dbtn" Content="..." HorizontalAlignment="Left" Margin="495,185,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click_1"/>
+        <TextBlock x:Name="StxtB" HorizontalAlignment="Left" Margin="31,109,0,0" TextWrapping="Wrap" Text="Source Folder" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DtxtB" HorizontalAlignment="Left" Margin="31,165,0,0" TextWrapping="Wrap" Text="Destination Folder" VerticalAlignment="Top"/>
+        <Button x:Name="Copy" Content="Copy !" HorizontalAlignment="Left" Margin="196,269,0,0" VerticalAlignment="Top" Width="204" Click="Button_Click_2" Height="48"/>
+        <Button x:Name="pasue" Content="Pasue" HorizontalAlignment="Left" Margin="44,236,0,0" VerticalAlignment="Top" Width="77" Click="pasue_Click"/>
+        <Button x:Name="CContinue" Content="Resume" HorizontalAlignment="Left" Margin="44,279,0,0" VerticalAlignment="Top" Width="77" Click="continue_Click"/>
+        <Button x:Name="cancel" Content="Cancel" HorizontalAlignment="Left" Margin="44,321,0,0" VerticalAlignment="Top" Width="77" Click="cancel_Click"/>
+        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="144,241,0,0" VerticalAlignment="Top" Width="308" ValueChanged="ProgressBar_ValueChanged"/>
+        <CheckBox x:Name="Sub" Content="Disable Sub Directory Backup" HorizontalAlignment="Left" Margin="210,327,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+    </Grid>
+</UserControl>
