@@ -57,6 +57,9 @@ The initial prototype is a .NET Core console app with these core features:
 
 ---
 
+## Note :
+you need to install this specific .Net framework for it to work: ```https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=6.0.0&arch=x64&rid=win-x64&os=win10```
+
 ## 📂 UML & Design Modeling
 
 The following UML diagrams were created to define the structure and flow of the system:
